@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView android:id="@+id/coz"
+        android:layout_width="@dimen/result_coz_width"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size" />
+
+    <TextView android:id="@+id/meno"
+        android:layout_width="@dimen/result_meno_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size"/>
+
+    <TextView android:id="@+id/skupina"
+        android:layout_width="@dimen/result_skupina_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size" />
+
+    <TextView android:id="@+id/hrazda"
+        android:layout_width="@dimen/result_hrazda_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size"/>
+
+    <TextView android:id="@+id/skok"
+        android:layout_width="@dimen/result_skok_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size" />
+
+    <TextView android:id="@+id/brusaky"
+        android:layout_width="@dimen/result_brusaky_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size"/>
+
+    <TextView android:id="@+id/sprint"
+        android:layout_width="@dimen/result_sprint_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size" />
+
+    <TextView android:id="@+id/beh"
+        android:layout_width="@dimen/result_beh_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size"/>
+
+    <TextView android:id="@+id/plavanie"
+        android:layout_width="@dimen/result_plavanie_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size"/>
+
+    <TextView android:id="@+id/body"
+        android:layout_width="@dimen/result_body_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size"/>
+</TableRow>
+
+

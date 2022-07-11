@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/disciplines_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="@dimen/btn_LL_marginT">
+
+
+        <Button
+            android:id="@+id/btn_lists"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:text="@string/zoznamy"
+            android:onClick="printLists"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/button_text_size"
+            android:background="@drawable/button_button"
+            style="@android:style/Widget.Holo.ActionButton.TextButton" />
+
+        <Button
+            android:id="@+id/btn_show_results"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="@dimen/btn_results_marginL"
+            android:text="@string/vyhodnot"
+            android:onClick="showResultPage"
+            android:background="@drawable/button_button"
+            style="@android:style/Widget.Holo.ActionButton.TextButton"/>
+
+</LinearLayout>

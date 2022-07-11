@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/after_run_padding_25dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+                <include layout="@layout/image_telesna"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dialog_dress_number"
+                    android:textSize="@dimen/after_run_text_size"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/margin_10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/old_value_text"
+                    android:textSize="@dimen/after_run_text_size"
+                    android:layout_margin="@dimen/margin_10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/after_run_text_size"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:text="+"/>
+
+                <EditText
+                    android:id="@+id/edit_plus_value"
+                    android:layout_width="@dimen/after_run_metre_width"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/editbox_background"
+                    android:textSize="@dimen/after_run_text_size"
+                    android:maxLength="3"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="numberSigned"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/after_run_buttonLL_margin"
+            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnZrus"
+                    android:layout_width="@dimen/after_run_button_width"
+                    android:layout_height="@dimen/after_run_button_height"
+                    android:textSize="@dimen/after_run_button_text_size"
+                    android:background="@drawable/button_nie"
+                    android:text="@string/zrus"/>
+                <Button
+                    android:id="@+id/btnZapis"
+                    android:layout_marginStart="@dimen/after_run_buttonZapis_margin"
+                    android:layout_width="@dimen/after_run_button_width"
+                    android:layout_height="@dimen/after_run_button_height"
+                    android:textSize="@dimen/after_run_button_text_size"
+                    android:background="@drawable/button_ano"
+                    android:text="@string/zapis"/>
+        </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_rel_lay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grid_button_shape">
+
+        <TextView
+            android:id="@+id/grid_text_number"
+            android:textSize="@dimen/grid_number_text_size"
+            android:textColor="@color/colorBlue"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/grid_text_score"
+            android:layout_below="@id/grid_text_number"
+            android:textSize="@dimen/grid_number_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:paddingBottom="3dp"
+            android:layout_height="wrap_content">
+        </TextView>
+
+</RelativeLayout>

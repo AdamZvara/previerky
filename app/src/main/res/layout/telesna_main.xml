@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin_10dp"
+    android:paddingBottom="@dimen/margin_10dp"
+    android:paddingTop="@dimen/margin_10dp"
+    android:paddingRight="@dimen/margin_10dp"
+    android:background="@mipmap/tartan">
+
+    <include layout="@layout/person_form"/>
+    <include layout="@layout/telesna_disciplines_form"/>
+    <include layout="@layout/button_form"/>
+    <include layout="@layout/grid_form"/>
+    <include layout="@layout/timer_form"/>
+
+</RelativeLayout>

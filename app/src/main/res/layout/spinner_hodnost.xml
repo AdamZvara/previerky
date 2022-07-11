@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/spinner_hodnost_width"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/person_edit_text_size"
+    android:textColor="@color/colorBlack"
+    android:background="@android:drawable/editbox_background_normal"/>

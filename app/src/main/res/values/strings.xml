@@ -1,0 +1,104 @@
+<resources>
+
+    <string name="app_name">Previerky</string>
+    <string name="t_attempt">Pokus</string>
+    <string name="dialog_title">Vyberte osoby pre beh</string>
+
+    <!--  Main form -->
+    <string name="KRPZKE">KRAJSKÉ RIADITEĽSTVO POLICAJNÉHO ZBORU    V KOŠICIACH</string>
+    <string name="telesna_nadpis">Previerky z telesnej zdatnosti</string>
+    <string name="telesna_nove">Telesna-nové</string>
+    <string name="strelby_nadpis">Previerky zo streleckej zdatnosti</string>
+    <string name="strelby_nove">Streľby-nové</string>
+
+    <string name="previerky_telesna">Previerky telesná</string>
+    <string name="previerky_strelby">Previerky streľby</string>
+    <string name="nove_meranie">Naozaj chceš spustiť nové meranie?</string>
+    <string name="ukonc_meranie">Naozaj chceš ukončiť meranie?</string>
+    <string name="ukonc_12min">Naozaj chceš ukončiť 12 min.?  Nezapíšeš zvyšné metre!</string>
+
+    <!--  Person form -->
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="datum_previerok">Dátum previerok</string>
+
+    <string name="hodnost">Hodnosť</string>
+    <string name="meno">Meno a priezvisko</string>
+    <string name="odbor">Obdor,oddelenie</string>
+    <string name="narodeny">Narodený</string>
+    <string name="skupina">Skupina</string>
+    <string name="pohlavie">Pohlavie</string>
+    <string name="zbran">Zbraň</string>
+
+    <!-- Disciplines -->
+    <string name="disc_hrazda">Hrazda</string>
+    <string name="disc_skok">Skok</string>
+    <string name="disc_brusaky">Ľah-sed</string>
+    <string name="disc_sprint">Šprint</string>
+    <string name="disc_beh">12. min</string>
+    <string name="disc_plavanie">Plávanie</string>
+
+    <!--  Telesna results-->
+    <string name="coz">ČOZ</string>
+    <string name="skupina_tv">Sk.</string>
+    <string name="hrazda">Hraz.</string>
+    <string name="skok">Skok</string>
+    <string name="brusaky">Ľ-S</string>
+    <string name="sprint">Šprint</string>
+    <string name="beh">12.min</string>
+    <string name="plavanie">Pláv.</string>
+    <string name="body">Body</string>
+
+
+    <!--  Strelby -->
+    <!--  Disciplines size -->
+    <string name="najdi_COZ">Nájdi ČOZ</string>
+    <string name="cas">Čas</string>
+    <string name="nul_terc">Nul. terč</string>
+    <string name="koef">Koeficient</string>
+
+
+    <!--  Button text-->
+    <string name="cas_stadion">ŠTART-čas na štadióne</string>
+    <string name="btnStadion">STOP!</string>
+    <string name="spat">Späť</string>
+    <string name="ukonc_telesnu">Ukonč telesnú</string>
+    <string name="stopky">00:00</string>
+    <string name="koniec_12min">Koniec 12 min.</string>
+    <string name="start">Štart</string>
+    <string name="pridaj_osobu">Pridaj osobu</string>
+    <string name="uprav_osobu">Uprav osobu</string>
+    <string name="zoznamy">Zoznamy</string>
+    <string name="vyhodnot">Vyhodnoť</string>
+    <string name="zapis_vykon">Zapíš výkon</string>
+    <string name="zrus">Zruš</string>
+    <string name="zapis">Zapíš</string>
+
+
+
+
+
+
+    <!-- GENDER AND GROUP CAPTIONS -->
+    <string name="b_empty_choice">--</string>
+    <string name="b_group_I">I</string>
+    <string name="b_group_II">II</string>
+    <string name="b_man">Muž</string>
+    <string name="b_woman">Žena</string>
+    <string name="b_gun_L">L</string>
+    <string name="b_gun_M">M</string>
+
+    <string name="b_passed">vyhovel</string>
+    <string name="b_failed">nevyhovel</string>
+
+    <string name="b_new_session">Ukonč streľby</string>
+    <string name="b_amend_session">Opravné streľby</string>
+
+
+
+
+
+
+
+
+</resources>

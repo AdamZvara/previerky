@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_results"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_15dp"
+    android:layout_marginLeft="@dimen/margin_15dp"
+    android:layout_marginRight="@dimen/margin_15dp"
+    android:layout_marginBottom="@dimen/margin_15dp"
+    tools:context="com.example.tomas.strelby.ShootsDisplayResults">
+
+
+
+    <LinearLayout
+        android:id="@+id/table_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAF0E6"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/result_strelby_coz_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:text="@string/coz"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/result_header_text_size"/>
+        <TextView
+            android:layout_width="@dimen/result_strelby_meno_width"
+            android:layout_height="wrap_content"
+            android:text="@string/meno"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/result_header_text_size"/>
+        <TextView
+            android:layout_width="@dimen/result_strelby_skupina_width"
+            android:layout_height="wrap_content"
+            android:text="@string/skupina_tv"
+            android:textSize="@dimen/result_header_text_size"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="@dimen/result_strelby_cas_width"
+            android:layout_height="wrap_content"
+            android:text="@string/cas"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/result_header_text_size"/>
+        <TextView
+            android:layout_width="@dimen/result_strelby_body_width"
+            android:layout_height="wrap_content"
+            android:text="@string/body"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/result_header_text_size"/>
+        <TextView
+            android:layout_width="@dimen/result_strelby_nul_width"
+            android:layout_height="wrap_content"
+            android:text="@string/nul_terc"
+            android:textSize="@dimen/result_header_text_size"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="@dimen/result_strelby_koef_width"
+            android:layout_height="wrap_content"
+            android:text="@string/koef"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/result_header_text_size"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/result_LL_height"
+        android:layout_below="@id/table_header"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/tableStrelby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true">
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/scrollView"
+        android:orientation="horizontal">
+
+        <Button
+        android:id="@+id/b_amend_session"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/b_amend_session"
+        android:textColor="#FFF"
+        android:textSize="@dimen/button_result_text_size"
+        android:textStyle="bold"
+        android:background="@drawable/roundedbuttonactive"
+        android:onClick="alertUserAmend"
+        style="@android:style/Widget.Holo.ActionButton.TextButton"/>
+
+        <Button
+            android:id="@+id/b_new_session"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:text="@string/b_new_session"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+
+            android:textColor="#FFF"
+            android:textSize="@dimen/button_result_text_size"
+            android:textStyle="bold"
+            android:background="@drawable/roundedbuttonactive"
+            android:onClick="alertUserEnd"
+            style="@android:style/Widget.Holo.ActionButton.TextButton"/>
+
+        <Button
+            android:id="@+id/b_back"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:text="@string/spat"
+            android:textColor="#FFF"
+            android:textSize="@dimen/button_result_text_size"
+            android:textStyle="bold"
+            android:background="@drawable/roundedbuttongreen"
+            style="@android:style/Widget.Holo.ActionButton.TextButton"
+            android:onClick="goBack"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+ked napisem coz a zmenim meno uzivatela zrobi hned update a potom pozrie ci uzosoba existuje
+pri overovani formy pozri na personId.equals("") - pre integer je to blbost
+pozri sa na chmod fail db
+farba background disabled edit
+zmen id na string
+pozri na results raz je hashmap - string string inokedy iba list 
+set default value of disciplines to 0
+pozri sa na zmenu id pri pridavani ludi
+ked je zena tak sa na zaciatku pyta na zmenu udajov 

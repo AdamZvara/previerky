@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin_10dp"
+    android:paddingBottom="@dimen/margin_10dp"
+    android:paddingTop="@dimen/margin_10dp"
+    android:paddingRight="@dimen/margin_10dp"
+    android:background="@mipmap/pozadie">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/krpz"
+        android:background="@color/color00FFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/main_KRPZ_text_size"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="@string/KRPZKE"
+            android:gravity="center"
+            android:singleLine="false"
+            android:background="@color/color3F6864"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_telesna"
+        android:layout_width="@dimen/main_LL_width"
+        android:layout_height="@dimen/main_LL_height"
+        android:background="@color/colorE0FFFF"
+        android:layout_below="@+id/krpz"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/telesna"
+            android:layout_width="@dimen/main_TW_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/main_TW_TvSt_text_size"
+            android:textColor="@color/colorRed"
+            android:background="@color/color81C784"
+            android:text="@string/telesna_nadpis"
+            android:gravity="center"
+            android:singleLine="true"/>
+
+        <GridView
+            android:id="@+id/telesna_main_gridview"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginStart="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:verticalSpacing="@dimen/margin_20dp"
+            android:horizontalSpacing="@dimen/margin_10dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/main_strelby"
+        android:layout_width="@dimen/main_LL_width"
+        android:layout_height="@dimen/main_LL_height"
+        android:background="@color/colorE0FFFF"
+        android:layout_below="@+id/krpz"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginStart="@dimen/main_LL_st_marginL"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/strelby"
+        android:layout_width="@dimen/main_TW_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/main_TW_TvSt_text_size"
+        android:textColor="@color/colorRed"
+        android:background="@color/color81C784"
+        android:text="@string/strelby_nadpis"
+        android:gravity="center"
+        android:singleLine="true"/>
+
+    <GridView
+        android:id="@+id/strelby_main_gridview"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/margin_20dp"
+        android:horizontalSpacing="@dimen/margin_10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/main_LL_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_below="@+id/main_strelby"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_telesna"
+            android:layout_marginLeft="@dimen/main_btn_tv_marginL"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/button_TvSt_text_size"
+            android:text="@string/telesna_nove"
+            android:background="@drawable/roundedbuttongreen"
+            style="@android:style/Widget.Holo.ActionButton.TextButton"
+            android:onClick="runTelesna"/>
+
+        <Button
+            android:id="@+id/btn_strelby"
+            android:layout_marginLeft="@dimen/main_btn_st_marginL"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/button_TvSt_text_size"
+            android:text="@string/strelby_nove"
+            android:background="@drawable/roundedbuttongreen"
+            style="@android:style/Widget.Holo.ActionButton.TextButton"
+            android:onClick="runStrelby"/>
+
+</LinearLayout>
+
+</RelativeLayout>

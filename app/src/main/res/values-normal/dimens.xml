@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Margin size -->
+
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_13dp">13dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+
+    <dimen name="main_gridview_text_size">32sp</dimen>
+    <dimen name="result_header_text_size">25sp</dimen>
+
+    <dimen name="image_WH_size">80dp</dimen>
+
+    <!--  Button size -->
+    <dimen name="button_width">160dp</dimen>
+    <dimen name="button_text_size">25sp</dimen>
+
+    <dimen name="view_UpDown_text_size">60sp</dimen>
+    <dimen name="button_UpDown_text_size">30sp</dimen>
+    <dimen name="button_UpDown_size">45dp</dimen>
+
+    <dimen name="person_text_size">18sp</dimen>
+    <dimen name="person_edit_text_size">33sp</dimen>
+
+    <!--  Telesna -->
+    <!--  Main -->
+    <dimen name="main_KRPZ_text_size">42sp</dimen>
+    <dimen name="main_TW_TvSt_text_size">27sp</dimen>
+    <dimen name="button_TvSt_text_size">23sp</dimen>
+    <dimen name="main_LL_width">430dp</dimen>
+    <dimen name="main_LL_height">370dp</dimen>
+    <dimen name="main_LL_btn_width">960dp</dimen>
+    <dimen name="main_LL_btn_height">60dp</dimen>
+    <dimen name="main_TW_width">430dp</dimen>
+    <dimen name="main_LL_st_marginL">490dp</dimen>
+    <dimen name="main_btn_tv_marginL">270dp</dimen>
+    <dimen name="main_btn_st_marginL">310dp</dimen>
+
+
+    <!--  Person size -->
+    <dimen name="person_dress_number_width">100dp</dimen>
+    <dimen name="person_dress_number_height">97dp</dimen>
+    <dimen name="person_btn_up_marginL">55dp</dimen>
+
+    <dimen name="person_edit_datum_width">160dp</dimen>
+
+    <dimen name="person_edit_coz_width">115dp</dimen>
+    <dimen name="person_coz_text_marginL">170dp</dimen>
+    <dimen name="person_edit_coz_marginL">165dp</dimen>
+
+    <dimen name="person_hodnost_text_marginL">290dp</dimen>
+    <dimen name="person_edit_hodnost_marginL">285dp</dimen>
+
+    <dimen name="person_edit_meno_width">435dp</dimen>
+    <dimen name="person_meno_text_marginL">415dp</dimen>
+
+    <dimen name="person_edit_born_width">100dp</dimen>
+    <dimen name="person_born_text_marginL">310dp</dimen>
+    <dimen name="person_edit_born_marginL">305dp</dimen>
+
+    <dimen name="person_edit_group_width">75dp</dimen>
+    <dimen name="person_group_text_marginL">425dp</dimen>
+    <dimen name="person_edit_group_marginL">420dp</dimen>
+
+    <dimen name="person_edit_gender_width">100dp</dimen>
+    <dimen name="person_gender_text_marginL">505dp</dimen>
+    <dimen name="person_edit_gender_marginL">500dp</dimen>
+
+    <dimen name="person_edit_gun_width">60dp</dimen>
+    <dimen name="person_gun_text_marginL">615dp</dimen>
+    <dimen name="person_edit_gun_marginL">610dp</dimen>
+
+    <!--  Spinner size -->
+    <dimen name="spinner_odbor_width">280dp</dimen>
+    <dimen name="spinner_hodnost_width">110dp</dimen>
+
+    <!--  Button size -->
+    <dimen name="btn_LL_marginT">230dp</dimen>
+    <dimen name="btn_results_marginL">35dp</dimen>
+
+    <!--  Timer size -->
+    <dimen name="timer_LL_width">500dp</dimen>
+    <dimen name="timer_text_size">42sp</dimen>
+    <dimen name="button_undo_startTimer_width">90dp</dimen>
+    <dimen name="button_undo_startTimer_text_size">25sp</dimen>
+
+    <!--  Disciplines size -->
+    <dimen name="TVdisciplines_LL_width">170dp</dimen>
+    <dimen name="TVdisciplines_LL_height">70dp</dimen>
+    <dimen name="btnStadion_LL_width">150dp</dimen>
+    <dimen name="btnStadion_LL_height">60dp</dimen>
+
+    <dimen name="disc_edit_hrazda_width">75dp</dimen>
+
+    <dimen name="disc_edit_skok_width">80dp</dimen>
+    <dimen name="disc_skok_text_marginL">105dp</dimen>
+    <dimen name="disc_edit_skok_marginL">100dp</dimen>
+
+    <dimen name="disc_edit_brusaky_width">80dp</dimen>
+    <dimen name="disc_brusaky_text_marginL">195dp</dimen>
+    <dimen name="disc_edit_brusaky_marginL">190dp</dimen>
+
+    <dimen name="disc_edit_sprint_width">105dp</dimen>
+    <dimen name="disc_sprint_text_marginL">285dp</dimen>
+    <dimen name="disc_edit_sprint_marginL">280dp</dimen>
+
+    <dimen name="disc_edit_beh_width">95dp</dimen>
+    <dimen name="disc_beh_text_marginL">400dp</dimen>
+    <dimen name="disc_edit_beh_marginL">395dp</dimen>
+
+    <dimen name="disc_edit_plavanie_width">90dp</dimen>
+    <dimen name="disc_plavanie_text_marginL">505dp</dimen>
+    <dimen name="disc_edit_plavanie_marginL">500dp</dimen>
+
+    <!--  Grid size -->
+    <dimen name="beh_grid_form_width">500dp</dimen>
+    <dimen name="beh_grid_form_marginT">225dp</dimen>
+    <dimen name="grid_number_text_size">20sp</dimen>
+
+
+    <!--  Results size -->
+
+    <dimen name="tv_result_table_text_size">21sp</dimen>
+    <dimen name="button_result_text_size">23sp</dimen>
+
+    <dimen name="result_coz_width">80dp</dimen>
+    <dimen name="result_meno_width">300dp</dimen>
+    <dimen name="result_skupina_width">40dp</dimen>
+    <dimen name="result_hrazda_width">65dp</dimen>
+
+    <dimen name="result_skok_width">75dp</dimen>
+    <dimen name="result_brusaky_width">70dp</dimen>
+    <dimen name="result_sprint_width">75dp</dimen>
+    <dimen name="result_beh_width">85dp</dimen>
+    <dimen name="result_plavanie_width">80dp</dimen>
+    <dimen name="result_body_width">60dp</dimen>
+
+    <dimen name="result_LL_height">460dp</dimen>
+
+    <!--  After run dialog -->
+    <dimen name="after_run_text_size">35sp</dimen>
+    <dimen name="after_run_button_text_size">20sp</dimen>
+    <dimen name="after_run_padding_25dp">25dp</dimen>
+    <dimen name="after_run_metre_width">85dp</dimen>
+    <dimen name="after_run_buttonLL_margin">225dp</dimen>
+    <dimen name="after_run_button_width">80dp</dimen>
+    <dimen name="after_run_button_height">40dp</dimen>
+    <dimen name="after_run_buttonZapis_margin">35dp</dimen>
+
+
+
+    <!--  Strelby -->
+    <!--  Disciplines size -->
+    <dimen name="button_najdi_COZ_width">110dp</dimen>
+
+    <dimen name="disc_text_cas_marginL">30dp</dimen>
+    <dimen name="disc_edit_cas_marginL">25dp</dimen>
+    <dimen name="disc_edit_cas_width">125dp</dimen>
+
+    <dimen name="disc_text_body_marginL">175dp</dimen>
+    <dimen name="disc_edit_body_marginL">170dp</dimen>
+    <dimen name="disc_edit_body_width">80dp</dimen>
+
+    <dimen name="disc_text_null_marginL">275dp</dimen>
+    <dimen name="disc_edit_null_marginL">270dp</dimen>
+    <dimen name="disc_edit_null_width">85dp</dimen>
+
+    <dimen name="disc_text_ratio_marginL">375dp</dimen>
+    <dimen name="disc_edit_ratio_marginL">370dp</dimen>
+    <dimen name="disc_edit_ratio_width">100dp</dimen>
+
+    <dimen name="disc_text_status_marginL">485dp</dimen>
+    <dimen name="disc_edit_status_marginL">480dp</dimen>
+    <dimen name="disc_edit_status_width">180dp</dimen>
+
+    <!--  Results size -->
+    <dimen name="result_strelby_coz_width">100dp</dimen>
+    <dimen name="result_strelby_meno_width">360dp</dimen>
+    <dimen name="result_strelby_skupina_width">60dp</dimen>
+    <dimen name="result_strelby_cas_width">105dp</dimen>
+    <dimen name="result_strelby_cas_margin_minus">-10dp</dimen>
+    <dimen name="result_strelby_body_width">80dp</dimen>
+    <dimen name="result_strelby_nul_width">120dp</dimen>
+    <dimen name="result_strelby_koef_width">160dp</dimen>
+
+
+
+
+
+
+
+    <dimen name="size_AA_sp">14sp</dimen>
+    <dimen name="size_AB_sp">15sp</dimen>
+    <dimen name="size_AC_sp">16sp</dimen>
+    <dimen name="size_AD_sp">17sp</dimen>
+    <dimen name="size_AE_sp">18sp</dimen>
+    <dimen name="size_AF_sp">19sp</dimen>
+    <dimen name="size_AG_sp">20sp</dimen>
+    <dimen name="size_AH_sp">21sp</dimen>
+    <dimen name="size_AI_sp">22sp</dimen>
+    <dimen name="size_AJ_sp">23sp</dimen>
+    <dimen name="size_AK_sp">24sp</dimen>
+    <dimen name="size_AL_sp">25sp</dimen>
+    <dimen name="size_AM_sp">26sp</dimen>
+    <dimen name="size_AN_sp">27sp</dimen>
+    <dimen name="size_AO_sp">28sp</dimen>
+    <dimen name="size_AP_sp">29sp</dimen>
+    <dimen name="size_AQ_sp">30sp</dimen>
+    <dimen name="size_AR_sp">31sp</dimen>
+    <dimen name="size_AS_sp">32sp</dimen>
+    <dimen name="size_AT_sp">33sp</dimen>
+    <dimen name="size_AU_sp">34sp</dimen>
+    <dimen name="size_AV_sp">35sp</dimen>
+    <dimen name="size_AW_sp">40sp</dimen>
+    <dimen name="size_AX_sp">50sp</dimen>
+    <dimen name="size_AY_sp">70sp</dimen>
+    <dimen name="size_AZ_sp">105sp</dimen>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dimen name="size_AAJ_sp">14sp</dimen>
+    <dimen name="size_AAA_sp">18sp</dimen>
+    <dimen name="size_AAB_sp">20sp</dimen>
+    <dimen name="size_AAC_sp">25sp</dimen>
+    <dimen name="size_AAD_sp">27sp</dimen>
+    <dimen name="size_AAE_sp">30sp</dimen>
+    <dimen name="size_AAK_sp">33sp</dimen>
+    <dimen name="size_AAF_sp">40sp</dimen>
+    <dimen name="size_AAG_sp">42sp</dimen>
+    <dimen name="size_AAH_sp">70sp</dimen>
+    <dimen name="size_AAI_sp">105sp</dimen>
+
+
+
+    <dimen name="size_AAA_dp">5dp</dimen>
+    <dimen name="size_AAB_dp">8dp</dimen>
+    <dimen name="size_AAC_dp">10dp</dimen>
+    <dimen name="size_AAD_dp">13dp</dimen>
+    <dimen name="size_AAE_dp">15dp</dimen>
+    <dimen name="size_AAF_dp">20dp</dimen>
+    <dimen name="size_AAG_dp">23dp</dimen>
+    <dimen name="size_AAH_dp">25dp</dimen>
+    <dimen name="size_AAI_dp">28dp</dimen>
+    <dimen name="size_AAJ_dp">30dp</dimen>
+    <dimen name="size_AAK_dp">33dp</dimen>
+    <dimen name="size_AAL_dp">40dp</dimen>
+    <dimen name="size_AAM_dp">50dp</dimen>
+    <dimen name="size_AAN_dp">60dp</dimen>
+    <dimen name="size_AAO_dp">65dp</dimen>
+    <dimen name="size_AAP_dp">70dp</dimen>
+    <dimen name="size_AAR_dp">75dp</dimen>
+    <dimen name="size_AAS_dp">80dp</dimen>
+    <dimen name="size_AAT_dp">85dp</dimen>
+    <dimen name="size_AAU_dp">90dp</dimen>
+    <dimen name="size_AAV_dp">95dp</dimen>
+    <dimen name="size_AAW_dp">100dp</dimen>
+    <dimen name="size_AAX_dp">103dp</dimen>
+    <dimen name="size_AAY_dp">105dp</dimen>
+    <dimen name="size_AAZ_dp">110dp</dimen>
+    <dimen name="size_ABA_dp">120dp</dimen>
+    <dimen name="size_ABB_dp">130dp</dimen>
+    <dimen name="size_ABC_dp">135dp</dimen>
+    <dimen name="size_ABD_dp">135dp</dimen>
+    <dimen name="size_ABE_dp">160dp</dimen>
+    <dimen name="size_ABF_dp">170dp</dimen>
+    <dimen name="size_ABG_dp">175dp</dimen>
+    <dimen name="size_ABH_dp">180dp</dimen>
+    <dimen name="size_ABI_dp">188dp</dimen>
+    <dimen name="size_ABJ_dp">195dp</dimen>
+    <dimen name="size_ABK_dp">200dp</dimen>
+    <dimen name="size_ABL_dp">210dp</dimen>
+    <dimen name="size_ABM_dp">215dp</dimen>
+    <dimen name="size_ABN_dp">260dp</dimen>
+    <dimen name="size_ABO_dp">265dp</dimen>
+    <dimen name="size_ABP_dp">270dp</dimen>
+    <dimen name="size_ABR_dp">295dp</dimen>
+    <dimen name="size_ABS_dp">300dp</dimen>
+    <dimen name="size_ABT_dp">305dp</dimen>
+    <dimen name="size_ABU_dp">310dp</dimen>
+    <dimen name="size_ABV_dp">320dp</dimen>
+    <dimen name="size_ABW_dp">332dp</dimen>
+    <dimen name="size_ABX_dp">338dp</dimen>
+    <dimen name="size_ABY_dp">360dp</dimen>
+    <dimen name="size_ABZ_dp">365dp</dimen>
+    <dimen name="size_ACA_dp">370dp</dimen>
+    <dimen name="size_ACB_dp">385dp</dimen>
+    <dimen name="size_ACD_dp">390dp</dimen>
+    <dimen name="size_ACE_dp">405dp</dimen>
+    <dimen name="size_ACF_dp">415dp</dimen>
+    <dimen name="size_ACG_dp">420dp</dimen>
+    <dimen name="size_ACH_dp">450dp</dimen>
+    <dimen name="size_ACI_dp">470dp</dimen>
+    <dimen name="size_ACJ_dp">475dp</dimen>
+    <dimen name="size_ACK_dp">480dp</dimen>
+    <dimen name="size_ACL_dp">485dp</dimen>
+    <dimen name="size_ACM_dp">490dp</dimen>
+    <dimen name="size_ACN_dp">495dp</dimen>
+    <dimen name="size_ACO_dp">500dp</dimen>
+    <dimen name="size_ACP_dp">505dp</dimen>
+    <dimen name="size_ACR_dp">520dp</dimen>
+    <dimen name="size_ACS_dp">560dp</dimen>
+    <dimen name="size_ACT_dp">580dp</dimen>
+    <dimen name="size_ACU_dp">590dp</dimen>
+    <dimen name="size_ACV_dp">595dp</dimen>
+    <dimen name="size_ACW_dp">610dp</dimen>
+    <dimen name="size_ACX_dp">615dp</dimen>
+    <dimen name="size_ACY_dp">780dp</dimen>
+    <dimen name="size_ACZ_dp">960dp</dimen>
+
+
+
+
+</resources>

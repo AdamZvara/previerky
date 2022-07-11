@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_AAE_dp"
+            android:textSize="@dimen/size_AAC_sp"
+            android:textColor="#F00"
+            android:text="Vyberte osoby na beh"/>
+    </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/size_AAE_dp">
+
+
+                    <include layout="@layout/image_telesna"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginLeft="@dimen/size_AAL_dp"
+                                        android:layout_gravity="center">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Od"
+                                                android:textSize="@dimen/size_AAC_sp"/>
+                                            <Button
+                                                android:id="@+id/min_minus"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@null"
+                                                android:textSize="@dimen/size_AAF_sp"
+                                                android:text="&lt;"/>
+                                            <TextView
+                                                android:id="@+id/min_val"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/size_AAF_sp"/>
+                                            <Button
+                                                android:id="@+id/min_plus"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@null"
+                                                android:text="&gt;"
+                                                android:textSize="@dimen/size_AAF_sp"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/size_AAF_sp"
+                                        android:layout_marginTop="@dimen/size_AAC_dp">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Do"
+                                                android:textSize="@dimen/size_AAC_sp"/>
+                                            <Button
+                                                android:id="@+id/max_minus"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@null"
+                                                android:text="&lt;"
+                                                android:textSize="@dimen/size_AAF_sp"/>
+                                            <TextView android:id="@+id/max_Val"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/size_AAF_sp"/>
+                                            <Button
+                                                android:id="@+id/max_plus"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@null"
+                                                android:text="&gt;"
+                                                android:textSize="@dimen/size_AAF_sp"/>
+                                    </LinearLayout>
+
+                            </LinearLayout>
+
+                </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/size_ABH_dp"
+        android:paddingBottom="@dimen/size_AAE_dp"
+        android:layout_marginTop="@dimen/size_AAJ_dp">
+        <Button
+            android:id="@+id/btnNie"
+            android:layout_width="@dimen/size_AAS_dp"
+            android:layout_height="@dimen/size_AAL_dp"
+            android:textSize="@dimen/size_AAB_sp"
+            android:background="@drawable/button_nie"
+            android:text="Zruš"/>
+        <Button
+            android:id="@+id/btnAno"
+            android:layout_marginLeft="@dimen/size_AAM_dp"
+            android:layout_width="@dimen/size_AAS_dp"
+            android:layout_height="@dimen/size_AAL_dp"
+            android:textSize="@dimen/size_AAB_sp"
+            android:background="@drawable/button_ano"
+            android:text="OK"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView android:id="@+id/coz"
+        android:layout_width="@dimen/result_strelby_coz_width"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size" />
+
+    <TextView android:id="@+id/meno"
+        android:layout_width="@dimen/result_strelby_meno_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size"/>
+
+    <TextView android:id="@+id/skupina"
+        android:layout_width="@dimen/result_strelby_skupina_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size" />
+
+    <TextView android:id="@+id/cas"
+        android:layout_width="@dimen/result_strelby_cas_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="@dimen/result_strelby_cas_margin_minus"
+        android:textSize="@dimen/tv_result_table_text_size"/>
+
+    <TextView android:id="@+id/body"
+        android:layout_width="@dimen/result_strelby_body_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:textSize="@dimen/tv_result_table_text_size" />
+
+    <TextView android:id="@+id/nul"
+        android:layout_width="@dimen/result_strelby_nul_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="@dimen/margin_15dp"
+        android:textSize="@dimen/tv_result_table_text_size"/>
+
+    <TextView android:id="@+id/koef"
+        android:layout_width="@dimen/result_strelby_koef_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_result_table_text_size" />
+
+</TableRow>
+
+
