@@ -110,12 +110,18 @@ public class PhysicalDisplayResults extends AppCompatActivity {
     void printDocuments() {
 
         try {
+            /* store physical results */
             PhysicalFileManager.makeExcel_PhysicalPeopleAndResults(
                     db.getAllTelesnaResultsinSession(session), session.getTimeStamp(),
                     session.getStartStadiumTime(), session.getEndStadiumTime()
             );
             PhysicalFileManager.createTXT_telesna(db.getAllTelesnaResultsinSession(session), session);
             PhysicalFileManager.createTXT_telesna_vysledky(db.getAllTelesnaResultsinSession(session), session);
+
+            /* store self defence results */
+            PhysicalFileManager.makeExcel_SelfDefencePeopleAndResults(db.getAllTelesnaResultsinSession(session), session.getTimeStamp());
+            PhysicalFileManager.createTXT_sebaobrana(db.getAllTelesnaResultsinSession(session), session);
+
             LayoutInflater inflater = getLayoutInflater();
             View layout = inflater.inflate(R.layout.toast_telesna,
                     (ViewGroup) findViewById(R.id.custom_toast_container));

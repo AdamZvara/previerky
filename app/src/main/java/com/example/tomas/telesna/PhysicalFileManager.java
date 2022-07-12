@@ -18,6 +18,9 @@ import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.Timestamp;
+import java.time.Period;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -28,6 +31,9 @@ class PhysicalFileManager {
 
 
     static private String sourceFilePhysical = "/dab/predlohy/telesna_vysledky.xls"; /// telesna
+    static private String sourceFileSelfDefence = "/dab/predlohy/sebaobrana_vysledky.xls"; /// sebaobrana
+    static private Integer ageLimit = 40;
+
     static TableWrapper tableWrapper = new TableWrapper();
 
 
@@ -259,6 +265,108 @@ class PhysicalFileManager {
         saveExcelFile(wb, "/previerky/telesna/", name + ".xls", timestamp);
     }
 
+    static private boolean isInSelfDefence(PhysicalResult result) {
+        return (Calendar.getInstance().get(Calendar.YEAR) - result.person.getDateOfBirth() <= ageLimit && result.person.getGroup().equals("I"));
+    }
+
+    /**
+     * -----------------------------------------------------------------------------------------------
+     * Zapise datum previerok do hlavicky suboru "sebaobrana_vysledky
+     */
+    static private void generateHeaderSelfDefence(HSSFWorkbook workbook, Timestamp timestamp) {
+        HSSFSheet sheet = workbook.getSheetAt(0);
+        //Update the value of cell
+        HSSFRow row = sheet.getRow(0);
+        HSSFCell cell;
+
+        if ((row.getCell(0)) == null) row.createCell(0);
+        cell = row.getCell(0);
+        cell.setCellValue(cell.getStringCellValue() + " " + (Utilities.timestampToString(timestamp, "dd.MM.yyyy")));
+    }
+
+    /**
+     * -----------------------------------------------------------------------------------------------
+     * Prida ludi a ich vykony do zosita "telesna_vysledky" pri ukonceni previerok z telesnej
+     *
+     * @param workbook excel wb
+     * @param results  contestants that should be added
+     */
+    private static void addPeopleAndResults_selfDefence(HSSFWorkbook workbook, List<PhysicalResult> results) {
+        HSSFSheet sheet = workbook.getSheetAt(0);
+
+        //TODO createCell is wrong because when row exists it does not mean that cell exist - can end with Nullpointer
+        //Zapise osobne udaje a vykony do suboru "sebaobrana_vysledky"
+        int rowNum = 2;
+        int j = 0;
+        for (PhysicalResult res : results) {
+            if (!isInSelfDefence(res)) {
+                continue;
+            }
+
+            j = j + 1;
+            String status = "Vyhovel";
+
+            HSSFRow row = sheet.getRow(rowNum++);
+
+            if (row == null) {
+                row = sheet.createRow(rowNum - 1);
+                row.createCell(0);
+                row.createCell(1);
+                row.createCell(2);
+                row.createCell(3);
+                row.createCell(4);
+                row.createCell(5);
+                row.createCell(6);
+                row.createCell(7);
+                row.createCell(8);
+                row.createCell(9);
+                row.createCell(10);
+                row.createCell(11);
+                row.createCell(12);
+                row.createCell(13);
+                row.createCell(14);
+            }
+
+            (row.getCell(0) == null ? row.createCell(0) : row.getCell(0)).setCellValue(j);
+            row.getCell(1).setCellValue(res.person.id);
+            if (res.person.getRank().toString().isEmpty()) {
+                row.getCell(2).setCellValue("");
+            } else {
+                row.getCell(2).setCellValue(res.person.getRank().toString() + ". ");
+            }
+            row.getCell(3).setCellValue(res.person.name);
+            row.getCell(4).setCellValue(res.person.getCentrum().toString());
+            row.getCell(5).setCellValue(res.person.getDateOfBirth());
+            row.getCell(6).setCellValue(res.person.getGroup());
+            row.getCell(7).setCellValue(status);
+        }
+    }
+
+    /**
+     * -----------------------------------------------------------------------------------------------
+     * Do predlohy "sebaobrana_vysledky" zapise vysledky
+     *
+     * @param results people
+     * @throws NoResultException thrown when size is zero
+     * @throws IOException       when writing/reading from file fails
+     */
+    static void makeExcel_SelfDefencePeopleAndResults(List<PhysicalResult> results, Timestamp timestamp)
+            throws NoResultException, IOException {
+
+        if (results.size() == 0) {
+            throw new NoResultException();
+        }
+
+        HSSFWorkbook wb = null;
+        wb = openExcelFileForReading(sourceFileSelfDefence);
+
+        generateHeaderSelfDefence(wb, timestamp);
+        addPeopleAndResults_selfDefence(wb, results);
+
+        String name = "sebaobrana_vysledky";
+        saveExcelFile(wb, "/previerky/telesna/", name + ".xls", timestamp);
+    }
+
     /**
      * -----------------------------------------------------------------------------------------------
      * Vygeneruje textovy subor "telesna" pre nahadzovanie do centralnej databazy
@@ -339,7 +447,36 @@ class PhysicalFileManager {
         }
     }
 
+    /**
+     * -----------------------------------------------------------------------------------------------
+     * Vygeneruje textovy subor "sebaobrana" pre nahadzovanie do centralnej databazy
+     *
+     * @param results people to be printed
+     * @throws NoResultException when result is zero size
+     * @throws IOException       if result is 0 size.
+     */
+    static void createTXT_sebaobrana (List<PhysicalResult> results, Session session) throws NoResultException, IOException {
+        try {
+            File gpxfile = new File(Utilities.makeDateDir_telesna("dd-MM-yyyy", session.getTimeStamp()), "sebaobrana" + ".txt");
+            FileWriter writer = new FileWriter(gpxfile, false);
+            for (PhysicalResult result : results) {
+                if (!isInSelfDefence(result)) {
+                    continue;
+                }
+                String TXT_SEPARATOR = "-";
+                String text = result.person.id + TXT_SEPARATOR;
+                text += "V" + TXT_SEPARATOR;
+                text += result.person.getGroup();
+                writer.append(text + System.getProperty("line.separator"));
+            }
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
 
+        }
+    }
 
 }
 
